@@ -1,19 +1,18 @@
-namespace AccessModifierAndMethods
+namespace AccessModifierNamespace
 {
-    class AccessModifier //default access modifier for class is internal & methods is private
-    {
-        int x;
-        int y;
 
+    internal class AccessModifier
+    {
+        internal int x;
+        public int y;
         internal void DoSomething()
         {
 
         }
-
-        int CalculateAverage(int[] numbers)
+        public int CalculateAverage(int[] numbers)
         {
+            DoSomething();
             return 0;
         }
     }
-
 }
